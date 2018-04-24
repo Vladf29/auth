@@ -42,10 +42,10 @@ module.exports = {
             token
         });
     },
-    signIn: async (req, res, next) => {
-        console.log('User con sign in');
-    },
+    signIn: async (req, res, next) => {},
     secret: async (req, res, next) => {
-        console.log('User con sec');
+        res.json({
+            secret: "resource"
+        })
     }
 }
